@@ -1,0 +1,73 @@
+﻿<Window x:Class="FinalProject_WPF.Registration.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject_WPF.Registration"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="400" Width="380" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF1000D8"/>
+            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="#FF8700D8" Offset="0.326"/>
+            <GradientStop Color="#FF3985DA" Offset="0.643"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid Name="ToolBar" Background="Transparent" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="3" MouseDown="ToolBar_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Image Name="CollapseButton" Style="{StaticResource FPCollapseButton}" Height="25" Width="25" Margin="0,5,10,5" MouseDown="CollapseButton_MouseDown">
+                    <Image.Effect>
+                        <BlurEffect Radius="1"></BlurEffect>
+                    </Image.Effect>
+                </Image>
+                <Image Name="CrossButton" Style="{StaticResource FPCrossButton}" Height="25" Width="25" MouseDown="CrossButton_MouseDown">
+                    <Image.Effect>
+                        <BlurEffect Radius="1"></BlurEffect>
+                    </Image.Effect>
+                </Image>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Column="1" Grid.Row="7" BorderThickness="1" CornerRadius="2" BorderBrush="#0029e0" Background="#111112">
+            <PasswordBox x:Name="PasswordBox" Foreground="White" FontSize="18" Background="{x:Null}"/>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="11" BorderThickness="1" CornerRadius="2" BorderBrush="#0029e0" Background="#111112">
+            <PasswordBox x:Name="PasswordBoxConfirmed" Foreground="White" FontSize="18" Background="{x:Null}"/>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="3" BorderThickness="1" CornerRadius="2" BorderBrush="#0029e0" Background="#111112">
+            <TextBox x:Name="TxtLogin" Foreground="White" TextWrapping="Wrap" FontSize="18" Text="" Background="{x:Null}"/>
+        </Border>
+
+        <Button x:Name="ExitButton" Content="Назад" Style="{StaticResource FPButtonStyle}" Foreground="White" FontSize="18" Grid.Column="1" Grid.Row="15" />
+        <Button x:Name="RegistrationButton" Content="Регистрация" Style="{StaticResource FPButtonStyle}" Foreground="White" FontSize="18" Grid.Column="1" Grid.Row="13"/>
+        <TextBlock TextWrapping="Wrap" Text="Имя пользователя" FontWeight="DemiBold" Foreground="AliceBlue" TextAlignment="Center" FontSize="16" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock TextWrapping="Wrap" Text="Пароль" FontWeight="DemiBold" Foreground="AliceBlue" TextAlignment="Center" FontSize="16" Grid.Column="1" Grid.Row="5"/>
+        <TextBlock TextWrapping="Wrap" Text="Подтвердить пароль" FontWeight="DemiBold" Foreground="AliceBlue" TextAlignment="Center" FontSize="16" Grid.Column="1" Grid.Row="9"/>
+    </Grid>
+</Window>

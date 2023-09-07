@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Source\**" />
+    <EmbeddedResource Remove="Source\**" />
+    <None Remove="Source\**" />
+    <Page Remove="Source\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Application\CollapseOff.png" />
+    <None Remove="Application\CollapseOn.png" />
+    <None Remove="Application\CrossOff.png" />
+    <None Remove="Application\CrossOn.png" />
+    <None Remove="Application\Request.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinalProject_WPF_ClassLibrary\FinalProject_WPF_ClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Application.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Application\CollapseOff.png" />
+    <Resource Include="Application\CollapseOn.png" />
+    <Resource Include="Application\CrossOff.png" />
+    <Resource Include="Application\CrossOn.png" />
+    <Resource Include="Application\Request.png" />
+  </ItemGroup>
+
+</Project>

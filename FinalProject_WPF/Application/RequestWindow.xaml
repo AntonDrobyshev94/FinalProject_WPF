@@ -1,0 +1,119 @@
+﻿<Window x:Class="FinalProject_WPF.Application.RequestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject_WPF.Application"
+        mc:Ignorable="d"
+        Title="RequestWindow" Height="730" Width="930" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF1000D8"/>
+            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="#FF8700D8" Offset="0.326"/>
+            <GradientStop Color="#FF3985DA" Offset="0.643"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="220"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Name="ToolBar" Background="Transparent" Grid.Row="0" Grid.ColumnSpan="9" Grid.RowSpan="5" MouseDown="ToolBar_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Image Name="CollapseButton" Style="{StaticResource FPCollapseButton}" Height="25" Width="25" Margin="0,5,10,5" MouseDown="CollapseButton_MouseDown">
+                    <Image.Effect>
+                        <BlurEffect Radius="1"></BlurEffect>
+                    </Image.Effect>
+                </Image>
+                <Image Name="CrossButton" Style="{StaticResource FPCrossButton}" Height="25" Width="25" Margin="0,5,10,5" MouseDown="CrossButton_MouseDown">
+                    <Image.Effect>
+                        <BlurEffect Radius="1"></BlurEffect>
+                    </Image.Effect>
+                </Image>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Column="3" Grid.Row="9" BorderThickness="1" CornerRadius="2" BorderBrush="#0029e0" Background="#111112">
+            <TextBox x:Name="TxtName" FontSize="18" TextElement.Foreground="AliceBlue" Background="{x:Null}">
+            </TextBox>
+        </Border>
+        <TextBlock IsHitTestVisible="False" Text="Имя" FontSize="18" TextElement.Foreground="#7f8274" Grid.Column="3" Grid.Row="9">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TxtName}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Border Grid.Column="3" Grid.Row="11" BorderThickness="1" CornerRadius="2" BorderBrush="#0029e0" Background="#111112">
+            <TextBox x:Name="TxtEmail" TextElement.Foreground="AliceBlue" FontSize="18" Background="{x:Null}">
+            </TextBox>
+        </Border>
+        <TextBlock IsHitTestVisible="False" Text="Электронная почта или телефон" FontSize="18" TextElement.Foreground="#7f8274" Grid.Column="3" Grid.Row="11">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TxtEmail}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <Border Grid.Column="3" Grid.Row="13" BorderThickness="1" CornerRadius="2" BorderBrush="#0029e0" Background="#111112">
+            <TextBox x:Name="TxtMessage" TextElement.Foreground="AliceBlue" TextWrapping="Wrap" FontSize="18" Background="{x:Null}"/>
+        </Border>
+        <TextBlock IsHitTestVisible="False" Text="Введите сообщение" FontSize="18" TextElement.Foreground="#7f8274" Grid.Column="3" Grid.Row="13">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TxtMessage}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <Button x:Name="AddRequestButton" Style="{StaticResource FPButtonStyle}" Grid.Row="15" Grid.Column="3" Foreground="White" Content="Отправить заявку" FontSize="18"/>
+        <Button x:Name="EnterAccount" Style="{StaticResource FPButtonStyle}" Content="Вход" Foreground="White" Grid.Column="5" Grid.Row="2" FontSize="18"/>
+        <Button x:Name="Registration" Style="{StaticResource FPButtonStyle}" Content="Регистрация" Grid.Column="7" Grid.Row="2" Foreground="White" FontSize="18"/>
+        <TextBlock x:Name="TxtNameUser" Text="" Foreground="White" Grid.Column="5" Grid.Row="2" Grid.ColumnSpan="3" TextAlignment="Right" FontSize="18"/>
+        <Button x:Name="Exit" Style="{StaticResource FPButtonStyle}" Content="Выход" Grid.Column="7" Grid.Row="4" Foreground="White" FontSize="18"/>
+        <TextBlock TextWrapping="Wrap" Text="Оставить заявку или задать вопрос" TextAlignment="Center" FontWeight="DemiBold" Foreground="AliceBlue" FontSize="18" Grid.Column="3" Grid.Row="7"/>
+        <Image x:Name="ImgApplication" Source="/Application/Request.png" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" Grid.RowSpan="2" />
+    </Grid>
+</Window>
