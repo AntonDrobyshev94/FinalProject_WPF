@@ -3,23 +3,6 @@ F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\FinalProject_WP
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\FinalProject_WPF.runtimeconfig.json
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\FinalProject_WPF.dll
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\FinalProject_WPF.pdb
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.AspNetCore.Cryptography.Internal.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Identity.Core.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Identity.Stores.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\FinalProject_WPF_ClassLibrary.dll
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
@@ -35,6 +18,7 @@ F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.Ident
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.xml
 F:\C#\FinalProject_WPF\FinalProject_WPF\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.xml
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\FinalProject_WPF.csproj.AssemblyReference.cache
+F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\ResourceDictionary.baml
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\Application\RequestWindow.g.cs
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\Authenticate\AuthenticateWindow.g.cs
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\MainWindow.g.cs
@@ -42,6 +26,7 @@ F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\Registration\Re
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\App.g.cs
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\FinalProject_WPF_MarkupCompile.cache
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\FinalProject_WPF_MarkupCompile.lref
+F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\App.baml
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\Application\RequestWindow.baml
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\Authenticate\AuthenticateWindow.baml
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\MainWindow.baml
@@ -57,5 +42,3 @@ F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\refint\FinalPro
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\FinalProject_WPF.pdb
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\FinalProject_WPF.genruntimeconfig.cache
 F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\ref\FinalProject_WPF.dll
-F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\ResourceDictionary.baml
-F:\C#\FinalProject_WPF\FinalProject_WPF\obj\Debug\net7.0-windows\App.baml

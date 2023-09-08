@@ -122,7 +122,7 @@ namespace FinalProject_WPF
                 GlobalVariables.userName = "";
                 GlobalVariables.userRole = "";
                 GlobalVariables.token = "";
-                RequestWindow requestWindow = new RequestWindow();
+                RequestWindow requestWindow = new RequestWindow(applicationDataApi);
                 requestWindow.Show();
                 MessageBox.Show("Вы успешно вышли из аккаунта!");
                 this.Close();

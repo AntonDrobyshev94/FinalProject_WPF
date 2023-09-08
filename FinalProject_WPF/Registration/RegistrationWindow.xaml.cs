@@ -1,19 +1,11 @@
 ﻿using FinalProject_WPF_ClassLibrary.AuthenticationModel;
 using FinalProject_WPF_ClassLibrary.Extensions;
 using FinalProject_WPF_ClassLibrary;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using FinalProject_WPF.Registration;
+using FinalProject_WPF.Application;
 
 namespace FinalProject_WPF.Registration
 {
@@ -49,8 +41,8 @@ namespace FinalProject_WPF.Registration
 
                     if (projectLogic.TokenDecodingRegistrMethod(token))
                     {
-                        MainWindow mainWindow = new MainWindow();
-                        mainWindow.Show();
+                        RequestWindow requestWindow = new RequestWindow(applicationDataApi);
+                        requestWindow.Show();
                         this.Close();
                     }
                     else

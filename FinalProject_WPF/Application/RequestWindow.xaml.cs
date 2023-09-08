@@ -41,7 +41,7 @@ namespace FinalProject_WPF.Application
                 if (response == "Успешно")
                 {
                     MessageBox.Show("Заявка успешно отправлена!");
-                    RequestWindow requestWindow = new RequestWindow();
+                    RequestWindow requestWindow = new RequestWindow(applicationDataApi);
                     requestWindow.Show();
                     this.Close();
                 }
@@ -61,6 +61,16 @@ namespace FinalProject_WPF.Application
             {
                 AuthenticateWindow authenticateWindow = new AuthenticateWindow(_applicationDataApi);
                 authenticateWindow.Show();
+                this.Close();
+            };
+            Exit.Click += delegate
+            {
+                GlobalVariables.userName = "";
+                GlobalVariables.userRole = "";
+                GlobalVariables.token = "";
+                RequestWindow requestWindow = new RequestWindow(applicationDataApi);
+                requestWindow.Show();
+                MessageBox.Show("Вы успешно вышли из аккаунта!");
                 this.Close();
             };
         }

@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
 using System.Net.Http.Headers;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using FinalProject_WPF_ClassLibrary.Models;
 using FinalProject_WPF_ClassLibrary.AuthenticationModel;
 using Newtonsoft.Json;

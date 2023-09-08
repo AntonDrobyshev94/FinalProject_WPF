@@ -56,7 +56,7 @@ namespace FinalProject_WPF.Authenticate
                         }
                         else
                         {
-                            RequestWindow requestWindow = new RequestWindow();
+                            RequestWindow requestWindow = new RequestWindow(applicationDataApi);
                             requestWindow.Show();
                             this.Close();
                         }
